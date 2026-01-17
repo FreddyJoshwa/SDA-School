@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SDA School Coimbatore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-box">
+    <img src="image/logosda.png" alt="SDA School Logo">
+    <span>SDA Matriculation Higher Secondary School</span>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#">Admissions</a>
+    <a href="#contact">Contact us</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Seventh Day Adventist<br>Matriculation Higher Secondary School</h1>
+    <p>Since 1975, shaping young minds in a dynamic co-educational learning environment.</p>
+     <a href="#contact" class="cta-btn">Contact Us</a>
+  </div>
+</section>
+
+<section class="motto-aim" id="about">
+
+  <h2 class="section-title">Motto & Aim</h2>
+
+  <div class="motto-aim-grid">
+
+    <!-- MOTTO -->
+    <div class="motto-box animate-left">
+      <h3 class="motto-title">Motto 👁️</h3>
+      <p>
+       “The Love of Christ Constraineth Us” is the foundation of our faith and values.
+The love of Christ guides our thoughts, words, and actions every day.
+It teaches us to live with purity, discipline, and kindness.
+We are inspired to serve others selflessly and compassionately.
+Christ’s love encourages obedience to God and respect for all.
+We strive to reflect His character in every aspect of our lives.
+      </p>
+    </div>
+
+    <div class="image-box animate-right">
+      <img src="image/sda7.jpg" alt="Motto Image">
+    </div>
+
+    <!-- AIM -->
+    <div class="image-box animate-left">
+      <img src="image/sda5.jpg" alt="Aim Image">
+    </div>
+
+    <div class="aim-box animate-right">
+      <h3 class="aim-title">Aim 🎯</h3>
+      <p>
+       “The Adventist message to all the world in this generation” is our mission.
+We seek to share God’s love, hope, and message of salvation.
+Our aim is to nurture young minds with strong moral and spiritual values.
+We guide students to live according to biblical principles.
+We encourage faith, responsibility, and service to humanity.
+Our goal is to prepare students to be a blessing to society and faithful servants of God..
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="facilities-section"id="facilities">
+<h2 class="facility-title animate-up">Facilities</h2>
+
+  <p class="facility-desc animate-up">
+    Our school offers well-equipped classrooms, laboratories, sports and activity spaces
+    to support holistic student development.
+  </p>
+
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollFacilities(-1)">&#10094;</button>
+
+    <div class="facility-cards" id="facilityScroll">
+
+      <!-- CARD 1 -->
+      <div class="facility-card biology">
+        <img src="image/BIO LAB.jpeg" alt="Biology Lab">
+        <h3>Biology Laboratory</h3>
+        <p>A fully equipped lab with microscopes and specimens to help students explore and understand living organisms.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="facility-card physics">
+        <img src="image/PHYSICS LAB.jpeg" alt="Physics Lab">
+        <h3>Physics Laboratory</h3>
+        <p>
+A well-equipped lab that helps students understand physical concepts through practical experiments and hands-on learning.</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="facility-card chemistry">
+        <img src="image/CHEMISTRY LAB.jpeg" alt="Chemistry Lab">
+        <h3>Chemistry Laboratory</h3>
+        <p>A modern laboratory designed for safe and effective chemical experiments, encouraging scientific thinking and curiosity.</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="facility-card library">
+        <img src="image/LIBRARY.jpeg" alt="Library">
+        <h3>Library</h3>
+        <p>A quiet and resourceful space with a wide collection of books to promote reading, research, and learning.</p>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="facility-card sports">
+        <img src="image/COMPUTER LAB.jpeg" alt="Sports">
+        <h3>Computer Lab</h3>
+        <p>A modern computer lab with updated systems to develop digital skills and support technology-based learning.</p>
+      </div>
+
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollFacilities(1)">&#10095;</button>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-header animate-up">
+    <h2>Contact Us</h2>
+    <p>Send us a message and we will get in touch with you shortly.</p>
+  </div>
+
+  <div class="contact-card animate-up">
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your name" required>
+
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="your.email@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell us about your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+
+      <p class="success-msg" id="successMsg">
+        ✅ Message sent successfully! We will contact you soon.
+      </p>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <img src="image/logosda.png" alt="SDA Logo" class="footer-logo">
+      <h3>SDA School Coimbatore</h3>
+      <p>
+        Ram Nagar, Chellappa Street<br>
+        Katoor, Coimbatore – 641009
+      </p>
+
+      <p class="footer-contact">
+        📞 <a href="tel:04222231747">0422 223 1747</a><br>
+        ✉️ <a href="mailto:cbec_sdamhss@yahoo.co.in">cvec_sdamhss@yahoo.co.in</a>
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h3>Google Map</h3>
+      <iframe
+        src="https://www.google.com/maps?q=SDA%20School%20Coimbatore&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    © Copyright SDA School Coimbatore |
+    Designed & Maintained by
+    <span>Fusionix Technologies</span>
+  </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
