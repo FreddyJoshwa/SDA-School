@@ -304,7 +304,7 @@
 
 .facilities-section {
   padding: 60px 40px;
-  background: #f2f2f2;
+   background: #fdf6ec;
 }
 
 .facilities-section h2 {
@@ -475,14 +475,19 @@
 
 /* CONTACT SECTION */
 .contact-section {
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #f6f9fc, #ffffff);
+  padding: 80px 60px;
+  background: #fdf6ec;
+  display: flex;
+  flex-direction: column;
+
 }
 
+
 .contact-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
+
 
 .contact-header h2 {
   font-size: 38px;
@@ -497,13 +502,14 @@
 
 /* CARD */
 .contact-card {
-  max-width: 700px;
-  margin: auto;
+  max-width: 600px;
+  margin: 0;              /* center remove */
   background: #fff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
+
 
 /* FORM */
 .contact-form {
@@ -670,3 +676,5 @@
     height: 200px;
   }
 }
+
+
