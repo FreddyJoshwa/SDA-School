@@ -87,3 +87,24 @@ function handleSubmit(e) {
     alert("Something went wrong ❌ Check console");
   });
 }
+
+function openFacility(img, title, desc) {
+  document.getElementById("popupImg").src = img;
+  document.getElementById("popupTitle").innerText = title;
+  document.getElementById("popupDesc").innerText = desc;
+  document.getElementById("facilityPopup").style.display = "flex";
+}
+
+function closeFacility() {
+  document.getElementById("facilityPopup").style.display = "none";
+}
+
+function scrollFacility(direction) {
+  const container = document.querySelector('.facility-scroll');
+  const scrollAmount = 420; // adjust if needed
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+

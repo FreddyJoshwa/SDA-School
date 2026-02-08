@@ -22,9 +22,9 @@
 
   <nav id="mobileMenu">
     <a href="#">Home</a>
-    <a href="#about">About</a>
     <a href="#facilities">Facilities</a>
-    <a href="#">Admissions</a>
+    <a href="admission.html">Admissions</a>
+    <a href="aboutus.html">About us</a>
     <a href="#contact">Contact us</a>
   </nav>
 </header>
@@ -82,59 +82,116 @@ Our goal is to prepare students to be a blessing to society and faithful servant
   </div>
 </section>
 
-<section class="facilities-section"id="facilities">
-<h2 class="facility-title animate-up">Facilities</h2>
-
-  <p class="facility-desc animate-up">
-    Our school offers well-equipped classrooms, laboratories, sports and activity spaces
-    to support holistic student development.
+<section class="facilities-section" id="facilities">
+  <h2 style="padding: 10px">Facilities</h2>
+  <p class="facility-desc" style="padding-bottom: 30px;">
+    Our school provides modern infrastructure for holistic learning.
   </p>
+   <button class="scroll-btn left" onclick="scrollFacility(-1)">‹</button>
+   <button class="scroll-btn right" onclick="scrollFacility(1)">›</button>
 
-  <div class="scroll-wrapper">
-    <button class="scroll-btn left" onclick="scrollFacilities(-1)">&#10094;</button>
+  <div class="facility-scroll">
 
-    <div class="facility-cards" id="facilityScroll">
-
-      <!-- CARD 1 -->
-      <div class="facility-card biology">
-        <img src="image/BIO LAB.jpeg" alt="Biology Lab">
-        <h3>Biology Laboratory</h3>
-        <p>A fully equipped lab with microscopes and specimens to help students explore and understand living organisms.</p>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="facility-card physics">
-        <img src="image/PHYSICS LAB.jpeg" alt="Physics Lab">
-        <h3>Physics Laboratory</h3>
-        <p>
-A well-equipped lab that helps students understand physical concepts through practical experiments and hands-on learning.</p>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="facility-card chemistry">
-        <img src="image/CHEMISTRY LAB.jpeg" alt="Chemistry Lab">
-        <h3>Chemistry Laboratory</h3>
-        <p>A modern laboratory designed for safe and effective chemical experiments, encouraging scientific thinking and curiosity.</p>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="facility-card library">
-        <img src="image/LIBRARY.jpeg" alt="Library">
-        <h3>Library</h3>
-        <p>A quiet and resourceful space with a wide collection of books to promote reading, research, and learning.</p>
-      </div>
-
-      <!-- CARD 5 -->
-      <div class="facility-card sports">
-        <img src="image/COMPUTER LAB.jpeg" alt="Sports">
-        <h3>Computer Lab</h3>
-        <p>A modern computer lab with updated systems to develop digital skills and support technology-based learning.</p>
-      </div>
-
+  <!-- Biology -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/BIO LAB.jpeg',
+      'Biology Laboratory',
+      'A fully equipped lab with microscopes and specimens.'
+    )">
+    <img src="image/BIO LAB.jpeg">
+    <div class="center-text">
+      <h2>Biology Lab</h2>
+      <p>Explore life science</p>
     </div>
-
-    <button class="scroll-btn right" onclick="scrollFacilities(1)">&#10095;</button>
   </div>
+
+  <!-- Chemistry -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/CHEMISTRY LAB.jpeg',
+      'Chemistry Laboratory',
+      'Modern lab for safe chemical experiments.'
+    )">
+    <img src="image/CHEMISTRY LAB.jpeg">
+    <div class="center-text">
+      <h2>Chemistry Lab</h2>
+      <p>Learn by doing</p>
+    </div>
+  </div>
+
+  <!-- Physics -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/PHYSICS LAB.jpeg',
+      'Physics Laboratory',
+      'Hands-on experiments for physics concepts.'
+    )">
+    <img src="image/PHYSICS LAB.jpeg">
+    <div class="center-text">
+      <h2>Physics Lab</h2>
+      <p>Learn with experiments</p>
+    </div>
+  </div>
+
+  <!-- Computer Lab -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/COMPUTER LAB.jpeg',
+      'Computer Laboratory',
+      'Modern systems for digital learning.'
+    )">
+    <img src="image/COMPUTER LAB.jpeg">
+    <div class="center-text">
+      <h2>Computer Lab</h2>
+      <p>Digital education</p>
+    </div>
+  </div>
+
+  <!-- Library -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/LIBRARY.jpeg',
+      'Library',
+      'A peaceful space with wide range of books.'
+    )">
+    <img src="image/LIBRARY.jpeg">
+    <div class="center-text">
+      <h2>Library</h2>
+      <p>Read • Learn • Grow</p>
+    </div>
+  </div>
+
+  <!-- sports -->
+  <div class="facility-photo"
+    onclick="openFacility(
+      'image/Sports.jpg',
+      'Sports',
+      'Large playground for sports and physical activities.'
+    )">
+    <img src="image/Sports.jpg">
+    <div class="center-text">
+      <h2>Sports</h2>
+      <p>Sports & fitness</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- POPUP (KEEP BELOW SECTION) -->
+<div class="facility-popup" id="facilityPopup">
+  <div class="popup-card">
+    <img id="popupImg">
+    <div class="popup-content">
+      <h2 id="popupTitle"></h2>
+      <p id="popupDesc"></p>
+      <button onclick="closeFacility()">Close</button>
+    </div>
+  </div>
+</div>
+
+  
 </section>
 
 <section class="contact-section" id="contact">

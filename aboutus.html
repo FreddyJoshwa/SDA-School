@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDA School - About Us</title>
+
+
+<style>
+    /* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 6%;
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-left img{
+    width:45px;
+}
+
+.nav-left h2{
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+}
+
+.nav-right a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    position:relative;
+    transition:0.3s;
+}
+
+.nav-right a:hover{
+    color:#f5c16c;
+}
+
+.nav-right .active{
+    color:#f5c16c;
+}
+
+/* Add space below fixed navbar */
+body{
+    padding-top:80px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+}
+
+/* HISTORY SECTION */
+.history{
+    padding:10px 5%;
+}
+
+.history h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.history p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+    color:#444;
+}
+
+/* PRINCIPAL SECTION */
+.principal-section{
+    padding:20px 5%;
+}
+
+.principal-container{
+ background:#d9d9d9;
+     border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.principal-image img{
+    width:400px;
+    border-radius:15px;
+}
+
+.principal-content{
+    flex:1;
+    color:#000;
+}
+
+.principal-content h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.principal-content h4{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.principal-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* VICE PRINCIPAL SECTION */
+.vice-section{
+    padding:20px 5%;
+}
+
+.vice-container{
+    background:#d9d9d9;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.vice-content{
+    flex:1;
+}
+
+.vice-content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.vice-content p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.vice-image img{
+    width:400px;
+    border-radius:15px;
+}
+/* ================= FACULTY SECTION ================= */
+
+.faculty-section{
+    padding: 20px;;   /* remove side spacing */
+}
+
+.faculty-wrapper{
+    position:relative;
+    width:100%;
+    border-radius:0;  /* remove curve if you want true edge-to-edge */
+    overflow:hidden;
+}
+
+.faculty-wrapper img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Text overlay */
+.faculty-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.faculty-overlay h2{
+    color:#ffffff;
+    font-size:50px;
+    font-weight:700;
+    text-shadow:0 5px 20px rgba(0,0,0,0.7);
+}
+
+
+/* ANIMATION */
+.fade-in{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all 1s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .principal-container,
+    .vice-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .principal-image img,
+    .vice-image img{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+        <img src="./image/logosda.png" alt="School Logo">
+        <h2>SDA Matriculation Higher Secondary School</h2>
+    </div>
+
+    <nav class="nav-right">
+         <a href="index.html#top">Home</a>
+  
+  <a href="index.html#facilities">Facilities</a>
+  <a href="admission.html">Admission</a>
+  <a href="aboutus.html">About us</a>
+  <a href="index.html#contact">Contact Us</a>
+    </nav>
+</header>
+
+
+<!-- HISTORY -->
+<section class="history fade-in">
+    <h1>History of SDA :</h1>
+    <p>
+        Seventh Day Adventist Matric Higher Secondary School, Coimbatore was established in 1975 under the guidance of the Seventh-day Adventist educational management, with a noble vision of providing quality education rooted in strong moral and spiritual values. From its humble beginnings, the school has grown into a respected institution known for academic excellence, discipline, and character formation. Over the decades, the school has consistently focused on holistic education, nurturing students intellectually, morally, socially, and spiritually. With a dedicated team of educators and the continued support of parents and the community, SDA School remains committed to shaping responsible, confident, and value-driven individuals who contribute positively to society.
+    </p>
+</section>
+
+<!-- PRINCIPAL -->
+<section class="principal-section fade-in">
+    <div class="principal-container">
+        <div class="principal-image">
+            <img src="image/sampleprinciple.webp" alt="Principal">
+        </div>
+
+        <div class="principal-content">
+            <h2>Mr. Joe Thomas</h2>
+            <h4>Principal of Seventh Day Adventist Matric Higher Secondary School, Coimbatore</h4>
+            <p>
+                is a dedicated educational leader committed to academic excellence, discipline, and value-based education. With a strong belief in holistic development, he encourages students to grow intellectually, morally, and socially. Under his guidance, the school strives to create a nurturing learning environment that inspires confidence, responsibility, and lifelong learning among students.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- VICE PRINCIPAL -->
+<section class="vice-section fade-in">
+    <div class="vice-container">
+
+        <div class="vice-content">
+            <h2>Vice Principal</h2>
+            <p>
+                The Vice Principal of Seventh Day Adventist Matric Higher Secondary School, Coimbatore plays a vital role in supporting the academic and administrative leadership of the institution. With a strong commitment to discipline, academic excellence, and student welfare, the Vice Principal works closely with the Principal, teachers, and parents to ensure a positive and effective learning environment. By encouraging teamwork, integrity, and holistic development, the Vice Principal helps guide students to grow into responsible, confident, and value-oriented individuals.
+            </p>
+        </div>
+
+        <div class="vice-image">
+            <img src="image/sampleprinciple.webp" alt="Vice Principal">
+        </div>
+
+    </div>
+</section>
+
+<!-- FACULTY SECTION -->
+<section class="faculty-section fade-in">
+    <div class="faculty-wrapper">
+        <img src="./image/sampleteacher.jpg" alt="Our Faculty">
+        <div class="faculty-overlay">
+            <h2>Our Esteemed Faculty</h2>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+// Fade In Animation on Scroll
+const elements = document.querySelectorAll('.fade-in');
+
+function showOnScroll(){
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elements.forEach(el=>{
+        const boxTop = el.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom){
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', showOnScroll);
+showOnScroll();
+</script>
+
+</body>
+</html>
