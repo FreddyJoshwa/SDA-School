@@ -24,6 +24,7 @@
     <a href="#">Home</a>
     <a href="#facilities">Facilities</a>
     <a href="admission.html">Admissions</a>
+    <a href="events.html">Events & Achievements</a>
     <a href="aboutus.html">About us</a>
     <a href="#contact">Contact us</a>
   </nav>
@@ -36,49 +37,6 @@
     <h1>Seventh Day Adventist<br>Matriculation Higher Secondary School</h1>
     <p>Since 1975, shaping young minds in a dynamic co-educational learning environment.</p>
      <a href="#contact" class="cta-btn">Contact Us</a>
-  </div>
-</section>
-
-<section class="motto-aim" id="about">
-
-  <h2 class="section-title">Motto & Aim</h2>
-
-  <div class="motto-aim-grid">
-
-    <!-- MOTTO -->
-    <div class="motto-box animate-left">
-      <h3 class="motto-title">Motto 👁️</h3>
-      <p>
-       “The Love of Christ Constraineth Us” is the foundation of our faith and values.
-The love of Christ guides our thoughts, words, and actions every day.
-It teaches us to live with purity, discipline, and kindness.
-We are inspired to serve others selflessly and compassionately.
-Christ’s love encourages obedience to God and respect for all.
-We strive to reflect His character in every aspect of our lives.
-      </p>
-    </div>
-
-    <div class="image-box animate-right">
-      <img src="image/sda7.jpg" alt="Motto Image">
-    </div>
-
-    <!-- AIM -->
-    <div class="image-box animate-left">
-      <img src="image/sda5.jpg" alt="Aim Image">
-    </div>
-
-    <div class="aim-box animate-right">
-      <h3 class="aim-title">Aim 🎯</h3>
-      <p>
-       “The Adventist message to all the world in this generation” is our mission.
-We seek to share God’s love, hope, and message of salvation.
-Our aim is to nurture young minds with strong moral and spiritual values.
-We guide students to live according to biblical principles.
-We encourage faith, responsibility, and service to humanity.
-Our goal is to prepare students to be a blessing to society and faithful servants of God..
-      </p>
-    </div>
-
   </div>
 </section>
 
@@ -169,7 +127,7 @@ Our goal is to prepare students to be a blessing to society and faithful servant
       'Sports',
       'Large playground for sports and physical activities.'
     )">
-    <img src="image/Sports.jpg">
+    <img src="image/sdasports1.jpg">
     <div class="center-text">
       <h2>Sports</h2>
       <p>Sports & fitness</p>
@@ -191,54 +149,52 @@ Our goal is to prepare students to be a blessing to society and faithful servant
   </div>
 </div>
 
-  
-</section>
 
 <section class="contact-section" id="contact">
-  <div class="contact-header animate-up">
-    <h2>Contact Us</h2>
-    <p>Send us a message and we will get in touch with you shortly.</p>
+
+  <div class="contact-overlay">
+
+    <div class="contact-header animate-up">
+      <h2>Contact Us</h2>
+      <p>Send us a message and we will get in touch with you shortly.</p>
+    </div>
+
+    <div class="contact-card animate-up">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="Your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell us about your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+
+        <p class="success-msg" id="successMsg">
+          ✅ Message sent successfully! We will contact you soon.
+        </p>
+
+      </form>
+    </div>
+
   </div>
-
-  <div class="contact-wrapper animate-up">
-
-  <!-- LEFT SIDE - FORM -->
-  <div class="contact-card">
-    <form class="contact-form" onsubmit="handleSubmit(event)">
-
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Your name" required>
-      </div>
-
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="your.email@example.com" required>
-      </div>
-
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input type="tel" name="phone" placeholder="Your phone number" required>
-      </div>
-
-      <div class="form-group">
-        <label>Message</label>
-        <textarea name="message" placeholder="Tell us about your message..." required></textarea>
-      </div>
-
-      <button type="submit" class="submit-btn">Send Message</button>
-
-      <p class="success-msg" id="successMsg">
-        ✅ Message sent successfully! We will contact you soon.
-      </p>
-
-    </form>
-  </div>
-
-
-</div>
 
 </section>
+
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -273,11 +229,12 @@ Our goal is to prepare students to be a blessing to society and faithful servant
     <div class="footer-right">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#admission">Admission</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+          <a href="#Home">Home</a><br>
+    <a href="#facilities">Facilities</a><br>
+    <a href="admission.html">Admissions</a><br>
+    <a href="events.html">Events & Achievements</a><br>
+    <a href="aboutus.html">About us</a><br>
+    <a href="#contact">Contact us</a><br>
       </ul>
     </div>
 
@@ -292,13 +249,8 @@ Our goal is to prepare students to be a blessing to society and faithful servant
 </footer>
 
 
-
-
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
 
 

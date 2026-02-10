@@ -3,7 +3,7 @@ const hero = document.querySelector(".hero");
 
 const images = [
   "image/sda1.jpg",
-  "image/sda2.jpg",
+  "image/students.jpg",
   "image/sda3.jpg",
   "image/sda4.jpg",
   "image/sda5.jpg"
@@ -107,4 +107,9 @@ function scrollFacility(direction) {
     behavior: 'smooth'
   });
 }
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+
 
