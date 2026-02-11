@@ -81,7 +81,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: #00345cbc;
+  background: #042944b3;
 }
 
 
@@ -1010,4 +1010,27 @@
   }
 }
 
+/* Default (Desktop) */
+.facility-photo {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .facility-photo {
+    width: 90%;
+    margin: auto;
+    aspect-ratio: 1 / 1;   /* Makes perfect square */
+  }
+
+  .facility-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Prevent image distortion */
+  }
+
+}
 
