@@ -335,6 +335,115 @@ body{
     }
 }
 
+/* ================= PRINCIPAL ================= */
+
+.principal{
+    padding:70px 8%;
+    background:#f9f9f9;
+}
+
+.principal h2{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.principal-row{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.principal-image{
+    flex:1;
+    text-align:center;
+}
+
+.principal-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.principal-text{
+    flex:2;
+}
+
+.principal-text h3{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.designation{
+    color:#777;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.principal-text p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .principal-row{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+/* ================= VICE PRINCIPAL ================= */
+
+.vice-principal{
+    padding:70px 8%;
+    background:#ffffff;
+}
+
+.vice-principal h2{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.vice-row{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.vice-text{
+    flex:2;
+}
+
+.vice-text h3{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.vice-image{
+    flex:1;
+    text-align:center;
+}
+
+.vice-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .vice-row{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
 </style>
 </head>
 
@@ -381,6 +490,85 @@ body{
             <h3 class="aim-title">Aim</h3>
             <p>“The Adventist message to all the world in this generation” is our mission. We seek to share God’s love, hope, and message of salvation. Our aim is to nurture young minds with strong moral and spiritual values. We guide students to live according to biblical principles. We encourage faith, responsibility, and service to humanity. Our goal is to prepare students to be a blessing to society and faithful servants of God...</p>
         </div>
+    </div>
+</section>
+
+<!-- PRINCIPAL SECTION -->
+<section class="principal">
+    <h2>Message from the Principal</h2>
+
+    <div class="principal-row">
+        
+        <div class="principal-image">
+            <img src="image/principal.jpg" alt="Principal SDA School Coimbatore" loading="lazy">
+        </div>
+
+        <div class="principal-text">
+            <h3>Mrs. [Principal Name]</h3>
+            <p class="designation">Principal</p>
+
+            <p><strong>Dear Students & Parents,</strong></p>
+
+            <p>
+                Welcome to SDA Matriculation Higher Secondary School, Coimbatore. 
+                Our institution is dedicated to providing quality education that 
+                nurtures academic excellence along with strong moral and spiritual values.
+            </p>
+
+            <p>
+                We believe education is not only about gaining knowledge but also 
+                about building character, discipline, and responsibility. 
+                Our goal is to shape students into confident, compassionate, 
+                and responsible individuals.
+            </p>
+
+            <p>
+                With the support of dedicated teachers and parents, we strive 
+                to create a positive learning environment where every child 
+                can achieve their full potential and become a valuable member of society.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VICE PRINCIPAL SECTION -->
+<section class="vice-principal">
+    <h2>Message from the Vice Principal</h2>
+
+    <div class="vice-row">
+
+        <div class="vice-text">
+            <h3>Mr. / Mrs. [Vice Principal Name]</h3>
+            <p class="designation">Vice Principal</p>
+
+            <p><strong>Dear Students & Parents,</strong></p>
+
+            <p>
+                At SDA Matriculation Higher Secondary School, we are committed 
+                to providing a nurturing and disciplined environment for all students. 
+                We strive to support each child in achieving academic success while 
+                developing strong values and character.
+            </p>
+
+            <p>
+                Our focus is on holistic development, encouraging students to 
+                participate in academics, co-curricular activities, and social 
+                responsibilities. We aim to guide them in becoming confident and 
+                responsible individuals.
+            </p>
+
+            <p>
+                Together with our dedicated staff and supportive parents, we 
+                ensure that every student receives the guidance and encouragement 
+                needed to excel in life.
+            </p>
+        </div>
+
+        <div class="vice-image">
+            <img src="image/viceprincipal.jpg" alt="Vice Principal SDA School Coimbatore" loading="lazy">
+        </div>
+
     </div>
 </section>
 
